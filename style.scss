@@ -1,0 +1,37 @@
+@import "bootstrap-overrides";
+
+html {
+    font-size: 90%;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 0px;
+    width: 8px;
+    height: 15px;
+    border: solid rgba(255, 255, 255, 0.669);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+header.settings-page {
+    background-image: linear-gradient($black, $dark);
+}
+
+div.col {
+    img {
+        transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-out;
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            transform: scale(1.5);
+            z-index: 10;
+        }
+    }
+}
+
+.little-text {
+    font-size: 0.8rem;
+}

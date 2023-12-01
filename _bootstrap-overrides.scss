@@ -1,0 +1,77 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "./assets/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+$dark: #141414;
+$form-check-input-active-filter: null;
+@import "./assets/bootstrap/scss/variables";
+@import "./assets/bootstrap/scss/variables-dark";
+$h7-font-size: $font-size-base * 1;
+$h8-font-size: $font-size-base * 0.75;
+$h9-font-size: $font-size-base * 0.5;
+$h10-font-size: $font-size-base * 0.25;
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "./assets/bootstrap/scss/maps";
+$font-sizes-added: (
+    7: $h7-font-size,
+    8: $h8-font-size,
+    9: $h9-font-size,
+    10: $h10-font-size,
+);
+
+$font-sizes: map-merge($font-sizes, $font-sizes-added);
+@import "./assets/bootstrap/scss/mixins";
+@import "./assets/bootstrap/scss/utilities";
+
+// Layout & components
+@import "./assets/bootstrap/scss/root";
+@import "./assets/bootstrap/scss/reboot";
+@import "./assets/bootstrap/scss/type";
+@import "./assets/bootstrap/scss/images";
+@import "./assets/bootstrap/scss/containers";
+@import "./assets/bootstrap/scss/grid";
+@import "./assets/bootstrap/scss/tables";
+@import "./assets/bootstrap/scss/forms";
+
+@import "./assets/bootstrap/scss/buttons";
+@import "./assets/bootstrap/scss/transitions";
+@import "./assets/bootstrap/scss/dropdown";
+@import "./assets/bootstrap/scss/button-group";
+@import "./assets/bootstrap/scss/nav";
+
+@import "./assets/bootstrap/scss/navbar";
+@import "./assets/bootstrap/scss/card";
+@import "./assets/bootstrap/scss/accordion";
+@import "./assets/bootstrap/scss/breadcrumb";
+@import "./assets/bootstrap/scss/pagination";
+
+@import "./assets/bootstrap/scss/badge";
+@import "./assets/bootstrap/scss/alert";
+@import "./assets/bootstrap/scss/progress";
+@import "./assets/bootstrap/scss/list-group";
+@import "./assets/bootstrap/scss/close";
+// @import "./bootstrap/scss/toasts";
+// @import "./bootstrap/scss/modal";
+// @import "./bootstrap/scss/tooltip";
+// @import "./bootstrap/scss/popover";
+// @import "./bootstrap/scss/carousel";
+// @import "./bootstrap/scss/spinners";
+// @import "./bootstrap/scss/offcanvas";
+// @import "./bootstrap/scss/placeholders";
+
+// Helpers
+@import "./assets/bootstrap/scss/helpers";
+
+// Utilities
+@import "./assets/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// 8. Add additional custom code here
